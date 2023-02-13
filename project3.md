@@ -1,19 +1,23 @@
 # MERN STACK Implementation
 
 ## Update and Upgrade new Instance
+
 `sudo apt update`
 `sudo apt upgrade`
-![Image of Update and Upgrade](upd-upg.PNG)
+![Image of Update and Upgrade](./Images/upd-upg.png)
 
 ## NODE.JS install
+
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-![Image of NODE JS install ](nodejs.PNG)
+![Image of NODE JS install ](./Images/nodejs.png)
 
 ## NODE.JS update
+
 `sudo apt-get install -y nodejs`
-![Image of Node JS update](nodjsup.PNG)
+![Image of Node JS update](./Images/nodjsup.png)
 
 ## Application of code-initial 
+
 `mkdir Todo`
 `ls`
 `cd Todo`
@@ -21,20 +25,26 @@
 -Click Enter and some other times
 -Type Yes
 
-![Image of application of code-npm initialization](initnpm.PNG)
+![Image of application of code-npm initialization](./Images/initnpm.png)
 
 ## Express Js install
+
 `npm install express`
-![Image of express install](expressinst.PNG)
+
+![Image of express install](./Images/expressinst.png)
 
 ## create file index
+
 `touch index.js`
 
 ## Install dotenv
-`npm install dotenv`
-![Image of dotenv](dotenv.PNG)
 
-# Edit index file
+`npm install dotenv`
+
+![Image of dotenv](./Images/dotenv.png)
+
+## Edit index file
+
 `vim index.js`
 
 >const express = require('express');
@@ -59,44 +69,56 @@ console.log(`Server running on port ${port}`)
 });
 
 ### to save
+
 -type :w ,ENTER
 -and :qa ,ENTER to exit vim
 
 ## Check port in terminal
+
 -Open Terminal
 -`cd Todo`
 -`node index.js`
-![Image of view port in terminal](chkport-term.PNG)
+
+![Image of view port in terminal](./Images/chkport-term.png)
 
 ## Add inbound rule for
+
 -Custom TCP
 -Port 5000
 -Description "Port 5000 for Project MERN "To-do" application deployment"
-![Image of view Port 5000 active](port5000.PNG)
+
+![Image of view Port 5000 active](./Images/port5000.png)
 
 ## View in browse
+
 [http://3.92.213.228:5000]
-![Image of view express](viewexp.PNG)
+
+![Image of view express](./Images/viewexp.png)
 
 ## Routes
+
 There are three actions that our To-Do application needs to be able to do:
 1. Create a new task
 2. Display list of all tasks
 3. Delete a completed task
 
 ## Blocker unable to connect to instance
+
 - Created another inbound rule for ssh port 80
 - Set inbound for HTTP on port 80
 -set for inbound for ssh on port 22
-![Image of Failed to connect to instance on terminal](blockerinb.PNG)
+
+![Image of Failed to connect to instance on terminal](./Images/blockerinb.png)
 
 ## create route direction and set to it
 `mkdir routes`
 `cd routes`
 `touch api.js`
-![Image of mkdir and cd routes](mkdir-cdR.PNG)
+
+![Image of mkdir and cd routes](./Images/mkdir-cdR.png)
 
 ## Insert into api.js
+
 `vim api.js`
 >const express = require ('express');
 const router = express.Router();
@@ -120,14 +142,15 @@ module.exports = router;
 :w ENTER and
 :qa ENTER
 
-![Image of Insert in api.js](insertapi.PNG)
+![Image of Insert in api.js](./Images/insertapi.png)
 
 ## Create Models Directory
 `cd Todo`
 
 ## Install Mongoose
 `npm install mongoose`
-![Image of Mongoose installed](mongoose.PNG)
+
+![Image of Mongoose installed](./Images/mongoose.png)
 
 ## Create Models Directory
 `mkdir models`
@@ -195,23 +218,27 @@ Todo.findOneAndDelete({"_id": req.params.id})
 module.exports = router;
 
 
-![Image of Modified api.js file](mod-apijs.PNG)
+![Image of Modified api.js file](./Images/mod-apijs.png)
 
 ## MOBAXTERM New session
+
 - Download and Install MobaXterm Home edition
 - New SSH session
 - Copy IP address
 - Username
 - Specify Primary Key (pick from download folder)
 
-![Image of MobaXterm session established](mobaXterm.PNG)
+![Image of MobaXterm session established](./Images/mobaXterm.png)
 
 ## Backend Configuration
+
 `sudo apt update`
 `sudo apt upgrade`
-![Image of running apt update and upgrade in MobaXterm](mod-apt.PNG)
+
+![Image of running apt update and upgrade in MobaXterm](./Images/mod-apt.png)
 
 ## Location of Node.JS
+
 `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`
 
 
